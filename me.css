@@ -1,0 +1,51 @@
+@font-face {
+    font-family: "UndeadPixel";
+    src: url("https://file.garden/ZmpydnEcJHbMzbK-/fonts/Undead%20Pixel%2011.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "ScifiMono";
+    src: url("https://file.garden/ZmpydnEcJHbMzbK-/fonts/NotJamSciMono13.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "HomeVideo";
+    src: url("https://file.garden/ZmpydnEcJHbMzbK-/fonts/HomeVideo-Regular.ttf") format("truetype");
+}
+
+img {
+    image-rendering: auto;
+    image-rendering: crisp-edges;
+    image-rendering: pixelated;
+}
+
+body {
+    min-height: 100vh;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background-color: #a1a1a1;
+    background-size: cover;
+    font-family: "HomeVideo";
+    font-size: 2em;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+.me {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 1500px;
+    height: 100%;
+    padding: 40px;
+    margin: 20px;
+    background-color: rgb(53, 53, 184);
+}

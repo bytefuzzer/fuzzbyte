@@ -1,0 +1,159 @@
+@font-face {
+    font-family: "UndeadPixel";
+    src: url("https://file.garden/ZmpydnEcJHbMzbK-/fonts/Undead%20Pixel%2011.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "ScifiMono";
+    src: url("https://file.garden/ZmpydnEcJHbMzbK-/fonts/NotJamSciMono13.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "HomeVideo";
+    src: url("https://file.garden/ZmpydnEcJHbMzbK-/fonts/HomeVideo-Regular.ttf") format("truetype");
+}
+
+img {
+    image-rendering: auto;
+    image-rendering: crisp-edges;
+    image-rendering: pixelated;
+}
+
+body {
+    min-height: 100vh;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background-color: #a1a1a1;
+    background-size: cover;
+    font-family: "HomeVideo";
+    font-size: 2em;
+}
+
+a {
+    text-decoration: none;
+}
+
+div {
+    display: block;
+    unicode-bidi: isolate;
+}
+
+.parent {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    animation: rotateAnimation 40s infinite ease-in-out;
+}
+
+.item {
+    border: 4px solid rgb(255, 255, 255);
+    padding: 10px;
+    height: 200px;
+    box-sizing: border-box;
+    font-size: 1.5em;
+    filter: grayscale(100%) hue-rotate(-15deg) brightness(150%);
+    transition: filter 0.3s linear;
+}
+
+.div1 {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+    background-image: url("img/ART.png");
+    background-color: #ff999998;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.div2 {
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 1;
+    background-image: url("img/AUD.png");
+    background-color: #99ccff;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.div3 {
+    grid-column: 3 / span 1;
+    grid-row: 1 / span 1;
+    background-color: #99ff99;
+    background-image: url("img/IDK.png");
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.div4 {
+    grid-column: 1 / span 3;
+    grid-row: 2 / span 1;
+    background-color: #ffcc99;
+    background-image: url("img/ME.png");
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.column {
+    height: 550px;
+    width: 250px;
+}
+
+.item:hover {
+    filter: grayscale(0%) hue-rotate(25deg) brightness(110%);
+}
+
+.parent {
+    position: relative;
+    z-index: 1;
+}
+
+.render {
+    position: absolute;
+    z-index: -1;
+    animation: rotateAnimation1 39.65s infinite ease-in-out;
+    animation: renderFilter 2s 
+
+}
+
+
+
+
+
+@keyframes rotateAnimation {
+    0%, 10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90%, 100% {
+        transform: rotate(2deg);
+    }
+
+    5%, 15%, 25%, 35%, 45%, 55%, 65%, 75%, 85%, 95% {
+        transform: rotate(-2deg);
+    }
+}
+
+@keyframes rotateAnimation1 {
+    0%, 10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90%, 100% {
+        transform: rotate(2deg);
+    }
+
+    5%, 15%, 25%, 35%, 45%, 55%, 65%, 75%, 85%, 95% {
+        transform: rotate(-2deg);
+    }
+}

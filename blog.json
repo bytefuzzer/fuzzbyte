@@ -1,0 +1,18 @@
+[
+    {
+      "title": "Primera Entrada del Blog",
+      "date": "2024-07-06",
+      "content": "Este es el contenido de la primera entrada del blog."
+    },
+    {
+      "title": "Segunda Entrada del Blog",
+      "date": "2024-07-07",
+      "content": "Este es el contenido de la segunda entrada del blog."
+    },
+
+    {
+      "title": "Tercera Entrada del Blog",
+      "date": "2024-07-08",
+      "content": "Este es el contenido de la tercera entrada del blog."}
+
+]
